@@ -9,10 +9,5 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
 
-  person?: PresentationStyle;
-
-  dfds() {
-    this.person.name
-  }
 
 }
