@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* roboto-mono-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/roboto-mono-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  $red: rgb(225, 85, 68);
+
+
+// .red-font-color {
+//   color: rgb(225, 85, 68);;
+// }
+
+
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #120B35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    color: #02F4BF;
+    font-size: 12px;
+
+}
+
+//general Styles
+.cursor-pointer {
+  cursor: pointer !important;
+} 
+
+.w-100 {
+  width: 100% !important;
+}
+
+a:hover {
+  color:#02F4BF !important;
+  cursor: pointer;
+}
+
+
+
