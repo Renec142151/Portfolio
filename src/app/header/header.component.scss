@@ -1,0 +1,44 @@
+
+@mixin dFlex ($jc: center, $ai: center, $g:0px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+
+nav {
+    color: rgb(225, 85, 68);
+    height: 92px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1440px;
+}
+
+a {
+    color: #E15544;
+    text-decoration: none;
+    
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 636px;
+    gap: 48px;
+}
+
+.language-menu {
+    @include dFlex($g: 6px);
+    >div {
+        border: solid 1px;
+        height: 25px;
+    }
+
+    // :hover {
+    //     color:#02F4BF;
+    //     cursor: pointer;
+    // }
+}
