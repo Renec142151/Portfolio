@@ -1,0 +1,85 @@
+
+@import './../../../styles.scss';
+
+
+.landing-page {
+    display: flex;
+    gap: 50px;
+    max-width: 1284px;
+    margin: 0 50px 0 50px;
+    height: calc(100vh - 135px);
+
+}
+
+.landing-page-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 25%;
+}
+
+.landing-page-navigate {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+
+}
+
+  .arrow-down-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+
+    :hover {
+        cursor: pointer;
+    }
+  }
+
+  
+
+.contact-me {
+    transform: rotate(270deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 10.5rem;
+    height: 4rem;
+    border: solid 1px #02F4BF;
+    text-decoration: none;
+    color: $red;
+    margin-left: -50px;
+    
+    
+}
+
+.my-name {
+
+
+    >h2{
+        font-size: 3vw;
+    }
+
+    >h1{
+        font-size: 5vw;
+        margin: 0;
+    }
+}
+
+
+.profil-image-div {
+display: flex;
+align-items: flex-end;
+// background-image: url("/assets/img/landing-page/profilbild-freigestellt.png");
+
+    >img {
+        width: 100%
+    }
+
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+  }

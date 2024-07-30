@@ -1,3 +1,4 @@
+@import './../../styles.scss';
 
 @mixin dFlex ($jc: center, $ai: center, $g:0px) {
     display: flex;
@@ -9,36 +10,42 @@
 
 nav {
     color: rgb(225, 85, 68);
-    height: 92px;
+    height: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1440px;
+    width: 95vw;
 }
 
 a {
     color: #E15544;
     text-decoration: none;
+    @include dFlex();
+    
     
 }
 
 .navigation-menu {
     display: flex;
     align-items: center;
-    height: 44px;
-    width: 636px;
-    gap: 48px;
+    justify-content: space-between;
+    width: 53rem;
 }
+
 
 .language-menu {
     @include dFlex($g: 6px);
+    margin: 0 1rem 0 4rem;
+
+
     >div {
         border: solid 1px;
         height: 25px;
     }
 
-    // :hover {
-    //     color:#02F4BF;
-    //     cursor: pointer;
-    // }
+}
+
+.my-logo {
+    @include dFlex();
+    margin-left: 1rem;
 }

@@ -12,10 +12,12 @@
   $red: rgb(225, 85, 68);
 
 
-// .red-font-color {
-//   color: rgb(225, 85, 68);;
-// }
-
+  @mixin dFlex ($jc: center, $ai: center, $g:0px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
 
 
 
@@ -29,7 +31,14 @@ body {
     font-family: 'Roboto Mono';
     color: #02F4BF;
     font-size: 12px;
+    width: 100%;
 
+}
+
+.router-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 //general Styles
