@@ -1,1 +1,99 @@
+<section class="why-me-section d-flex">
+  <div>
+    <img
+      class="profil-image"
+      src="/assets/img/why-me-section/profil-image.jpg"
+      alt=""
+    />
+  </div>
+  <div class="why-me-section-right-side d-flex flex-column align-items-end">
+    <h1>Why me</h1>
+    <p>
+      I am motivated to continuously learn new technologies and develop myself.
+      My ability to solve complex problems and my passion for programming make
+      me a valuable member of your team.
+    </p>
+    <div
+      class="i-am-section d-flex flex-column align-items-center justify-content-center row-gap-3"
+    >
+      <div
+        class="located d-flex justify-content-start align-items-center column-gap-5"
+      >
+        <span class="i-am fs-1">I am</span>
+        <div class="d-flex align-items-center column-gap-3">
+          <div
+            class="d-flex flex-column"
+            (mouseover)="showBase = true"
+            (mouseout)="showBase = false"
+          >
+            <img
+              class="located-img"
+              src="/assets/img/why-me-section/located-variant1.svg"
+              alt=""
+            />
+            <img
+              *ngIf="showBase"
+              class="located-base"
+              src="/assets/img/why-me-section/located-base.svg"
+              alt=""
+            />
+          </div>
 
+          <div class="d-flex flex-column">
+            <span>located</span>
+            <span>in Munich</span>
+          </div>
+        </div>
+      </div>
+      <div class="relocate d-flex justify-content-between">
+        <img
+          class="relocate-arrow"
+          src="/assets/img/why-me-section/Arrow-v1.png"
+          alt=""
+        />
+        <div class="d-flex align-items-center column-gap-3 me-3">
+          <img
+            class="relocate-bag"
+            src="/assets/img/why-me-section/relocate-v1.svg"
+            onmouseover="src='/assets/img/why-me-section/relocate-v2.svg';"
+            onmouseout="src='/assets/img/why-me-section/relocate-v1.svg';"
+            alt=""
+          />
+          <div class="d-flex flex-column">
+            <span>open to</span>
+            <span>relocate</span>
+          </div>
+        </div>
+      </div>
+      <div class="remote d-flex justify-content-between align-items-center">
+        <div class="d-flex column-gap-3 ms-4 align-items-center">
+          <div class="d-flex">
+            <img
+              class="remote-icon"
+              src="/assets/img/why-me-section/Icon-Remote-v1.svg"
+              onmouseover="src='/assets/img/why-me-section/Icon-Remote-v2.svg';"
+              onmouseout="src='/assets/img/why-me-section/Icon-Remote-v1.svg';"
+              alt=""
+            />
+          </div>
+
+          <div class="d-flex flex-column">
+            <span>open to</span>
+            <span>work remote</span>
+          </div>
+          <img
+            class="arrow-v2"
+            src="/assets/img/why-me-section/Arrow-v2.png"
+            alt=""
+          />
+        </div>
+        <img
+          class="arrow-v3"
+          src="/assets/img/why-me-section/Arrow-v3.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <a class="lets-talk link-red-hover" href="">Let's talk</a>
+  </div>
+</section>

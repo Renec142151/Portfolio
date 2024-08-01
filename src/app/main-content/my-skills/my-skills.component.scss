@@ -1,0 +1,22 @@
+
+@import './../../../styles.scss';
+
+.my-skills {
+    display: flex;
+    align-items: center;
+    height: 412px;
+    flex-wrap: wrap;
+    max-width: 1284px;
+    gap: 100px;
+
+    >img {
+        height: 100px;
+        // width: 88px;
+    }
+}
+
+h1 {
+    color: $red;
+    font-size: 3rem;
+    font-weight: 500;
+}

@@ -55,5 +55,22 @@ a:hover {
   cursor: pointer;
 }
 
+.lets-talk {
+  width: 169px;
+  height: 52px;
+  padding: 15px 30px 15px 30px;
+  opacity: 0px;
+  background-color: rgba(2, 244, 191, 1);
+  text-align: center;
+  text-decoration: none;
+  color: rgba(11, 4, 45, 1);
+  font-weight: 500;
+  font-size: 1rem;
+  }
+
+  .link-red-hover:hover {
+    color: $red !important;
+}
+
 
 

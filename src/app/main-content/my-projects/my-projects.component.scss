@@ -1,0 +1,80 @@
+@import './../../../styles.scss';
+
+h1 {
+    color: $red;
+    text-align: center;
+    margin: 100px 0 100px 0;
+    font-size: 3rem;
+}
+
+.join {
+    
+
+    >img {
+        height: 370px;
+        width: 588px;
+    }
+}
+
+.el-pollo-loco {
+
+    >img {
+        height: 370px;
+        width: 588px;
+    }
+}
+
+.seperator {
+    border-left: solid 1px #02F4BF;
+    height: 14px;
+}
+
+.join-languages {
+    font-size: 1rem;
+}
+
+.join-info {
+    width: 498px;
+    margin-left: 50px;
+    margin-top: -20px;
+    height: 318px;
+
+
+
+
+}
+
+.upper-join-info {
+    >span {
+        font-size: 3rem;
+    }
+}
+
+.bottom-join-info {
+    gap: 30px;
+
+    >p {
+        font-size: 1rem;
+    }
+
+}
+
+.github-link {
+    width: 169px;
+    height: 52px;
+    padding: 15px 30px 15px 30px;
+    opacity: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: $red;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid #02F4BF;
+}
+
+.links-to-projects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
