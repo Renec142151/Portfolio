@@ -8,21 +8,15 @@ h1 {
 }
 
 .join {
-    
+    margin-bottom: 100px;
 
     >img {
         height: 370px;
         width: 588px;
+
     }
 }
 
-.el-pollo-loco {
-
-    >img {
-        height: 370px;
-        width: 588px;
-    }
-}
 
 .seperator {
     border-left: solid 1px #02F4BF;
@@ -35,13 +29,9 @@ h1 {
 
 .join-info {
     width: 498px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: -20px;
     height: 318px;
-
-
-
-
 }
 
 .upper-join-info {
@@ -67,7 +57,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     color: $red;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1rem;
     border: 1px solid #02F4BF;
 }
@@ -76,5 +66,21 @@ h1 {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.el-pollo {
+    
+
+    >img {
+        height: 370px;
+        width: 588px;
+    }
+}
+
+.el-pollo-info {
+    width: 498px;
+    margin-right: 50px;
+    margin-top: -20px;
+    height: 318px;
 }
 
