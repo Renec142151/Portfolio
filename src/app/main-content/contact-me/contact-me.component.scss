@@ -2,8 +2,10 @@
 
 
 section {
-  width: 1184px;
+  max-width: 1184px;
   flex-direction: column;
+  width: 90vw;
+  margin-top: 6rem;
 
 }
 
@@ -27,7 +29,7 @@ section {
 
 .contact-me-text {
     font-size: 1.2rem;
-    width: 500px;
+    width: 45%;
 }
 
 .telefon-number {
@@ -80,6 +82,7 @@ textarea {
   display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 32%;
 
     >div {
       display: flex;
@@ -91,6 +94,7 @@ textarea {
   display: flex;
   gap: 0.5rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 
   >span {
     font-size: 0.8rem;
@@ -112,6 +116,8 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 

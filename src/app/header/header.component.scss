@@ -14,8 +14,12 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 95vw;
+    width: 100%;
+    background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
+
 }
+
+
 
 a {
     color: #E15544;
@@ -48,4 +52,38 @@ a {
 .my-logo {
     @include dFlex();
     margin-left: 1rem;
+}
+
+.burger-menu-icon {
+    display: none;
+    margin-right: 2rem;
+}
+
+.my-logo-responsive {
+    display: none;
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation-menu {
+        display: none;
+    }
+
+    .language-menu {
+        display: none;
+    
+    }
+
+    .burger-menu-icon {
+        display: flex;
+    }
+    
+    .my-logo-responsive {
+        display: flex;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
 }

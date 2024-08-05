@@ -2,10 +2,20 @@
 
 
 .why-me-section {
-    max-width: 1284px;
-    margin: 100px 50px 100px 50px;
+    max-width: 1337px;
+    margin: 100px 0px 100px 0px;
+    
+    width: 90vw;
     
 }
+
+.why-me-section-right-side {
+
+    margin-left: 1rem;
+}
+
+
+
 
 .i-am-section {
     flex: 1;
@@ -14,7 +24,8 @@
 
 
 .profil-image {
-    width: 488px;
+    width: 100%;
+   
 }
 
 h1 {
@@ -67,6 +78,7 @@ span {
 
 .remote {
     width: 60%;
+    margin-bottom: 1rem;
 }
 
 .i-am {
@@ -81,6 +93,118 @@ span {
   
   .located-img:hover + .located-base {
     opacity: 1;
+  }
+
+  .relocate-arrow-responsive {
+    display: none;
+  }
+
+
+
+  @media only screen and (max-width: 1000px) {
+    .profil-image {
+        display: none;
+       
+    }
+
+
+
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .why-me-section-right-side {
+
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .relocate-arrow {
+        display: none;
+    }
+
+    .arrow-v2 {
+        display: none;
+    }
+    
+    .arrow-v3 {
+        display: none;
+    }
+
+    .remote-inner {
+        margin: 0 !important;
+    }
+
+    .located {
+        flex-direction: column;
+    }
+
+    .i-am-section {
+        width: 100%;
+    }
+
+    .relocate {
+        width: 100%;
+        justify-content: center !important;
+    }
+    
+    .remote {
+        width: 100%;
+        margin: 0;
+        justify-content: center !important;
+    }
+    
+    .located-span {
+        flex-direction: unset !important;
+        gap: 0.7rem;
+    }
+    .relocate-span {
+        flex-direction: unset !important;
+        gap: 0.7rem;
+    }
+    .remote-span {
+        flex-direction: unset !important;
+        gap: 0.7rem;
+    }
+
+    .relocate-inner {
+        margin: 0 !important;
+    }
+
+    .relocate-arrow-responsive {
+        display: flex;
+        transform: translateX(-10rem);
+      }
+
+      .relocate-arrow-responsive-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .remote-arrow-responsive {
+        transform: translateX(+10rem) scaleX(-1);
+        margin-bottom: 2rem;
+    }
+    
+
+      .remote-arrow-responsive-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+
   }
 
   

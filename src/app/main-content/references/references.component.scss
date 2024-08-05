@@ -1,6 +1,10 @@
 @import './../../../styles.scss';
 
 
+section {
+    width: 90vw;
+}
+
 h2 {
     color: $red;
     font-size: 1.5rem;
@@ -25,7 +29,7 @@ section {
 
 .single-references {
     width: 525px;
-    height: 350px;
+    // height: 350px;
     
     >span {
         font-size: 1.2rem;
@@ -35,3 +39,13 @@ section {
         font-size: 1.2rem;
     }
 }
+
+.header-div {
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    
+
+    }

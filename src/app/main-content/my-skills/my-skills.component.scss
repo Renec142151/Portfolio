@@ -4,14 +4,16 @@
 .my-skills {
     display: flex;
     align-items: center;
-    height: 412px;
+    // height: 412px;
     flex-wrap: wrap;
-    max-width: 1284px;
+    max-width: 1337px;
     gap: 100px;
+    width: 90vw;
+    margin-top: 2rem;
 
     >img {
         height: 100px;
-        // width: 88px;
+        
     }
 }
 

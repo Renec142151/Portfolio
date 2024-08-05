@@ -1,0 +1,43 @@
+@import './../../styles.scss';
+
+
+section {
+    margin-top: 6rem;
+    height: 12rem;
+   gap: 1rem;
+}
+
+.logo-footer {
+    width: 6rem;
+    cursor: pointer;
+  }
+
+  .upper-footer {
+    max-width: 1184px;
+    width: 90vw;
+
+
+  }
+
+  .links-upper-footer {
+    cursor: pointer;
+    gap: 1rem;
+    >img {
+        width: 2rem;
+    }
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+    color: $red;
+  }
+
+  .bottom-footer {
+    gap: 1rem;
+
+    >a {
+        text-decoration: none;
+        cursor: pointer;
+        color: $red;
+    }
+  }
