@@ -19,6 +19,10 @@
     gap: $g;
 }
 
+html {
+  font-size: 16px;
+}
+
 
 
 body {
@@ -67,6 +71,19 @@ a:hover {
 
   .link-red-hover:hover {
     color: $red !important;
+}
+
+@media only screen and (max-width: 800px) {
+ 
+  html {
+
+    font-size: 12px;
+
+
+}
+
+
+
 }
 
 

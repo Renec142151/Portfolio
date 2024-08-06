@@ -99,6 +99,9 @@ span {
     display: none;
   }
 
+  .remote-arrow-responsive-div {
+display: none;  }
+
 
 
   @media only screen and (max-width: 1000px) {
@@ -118,13 +121,19 @@ span {
         width: 100%;
     }
 
-    .why-me-section-right-side {
+    .why-me-section {
+        margin-bottom: 8rem;
 
+        
+    }
+
+    .why-me-section-right-side {
+        align-items: center !important;
         margin: 0;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         width: 100%;
         text-align: center;
     }
@@ -203,6 +212,15 @@ span {
         display: flex;
         justify-content: center;
       }
+      span {
+        font-size: 1.3rem;
+    }
+
+    .lets-talk {
+
+        width: 137px;
+        height: 43px;
+    }
 
 
   }

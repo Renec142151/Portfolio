@@ -31,11 +31,22 @@ h1 {
 
 .join-languages {
     font-size: 1rem;
+    gap: 1rem;
+}
+
+.join-languages-upper {
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.join-languages-bottom {
+    gap: 1rem;
+    font-size: 1.1rem;
 }
 
 .join-info {
     width: 498px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: -20px;
     height: 318px;
 }
@@ -53,6 +64,19 @@ h1 {
         font-size: 1rem;
     }
 
+}
+
+.bottom-pollo-info {
+    gap: 30px;
+
+    >p {
+        text-align: right;
+        font-size: 1rem;
+    }
+}
+
+.links-to-projects-pollo {
+    justify-content: end;
 }
 
 .github-link {
@@ -94,6 +118,11 @@ h1 {
     display: none;
 }
 
+.pollo-languages {
+    gap: 1rem;
+    font-size: 1rem;
+}
+
 
 @media only screen and (max-width: 1100px) {
     .join {
@@ -110,7 +139,22 @@ h1 {
 
     }
 
+    .join-img {
+        margin-top: 3rem;
+    }
+
+    .join-languages {
+        width: 70%;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
     .upper-join-info {
+
+        display: flex;
+    flex-direction: column;
+    align-items: center;
         >span {
             font-size: 3rem;
             display: flex;
@@ -120,14 +164,18 @@ h1 {
 
     .join-info {
         margin-left: 0;
-        height: 14rem;
+        height: unset;
+        width: 90%;
 
     }
 
     .bottom-join-info {
     
         >p {
+            margin-top: 2rem;
             text-align: center;
+                font-size: 1.3rem;
+    
         }
     
     }
@@ -141,6 +189,8 @@ h1 {
         align-items: center;
         gap: 20px;
         margin-top: 2rem;
+
+
     }
 
     .el-pollo {
@@ -154,8 +204,59 @@ h1 {
     }
 
     .el-pollo-info {
-        width: 498px;
-        height: 14rem;
+        width: 90%;
+        height: unset;
         margin: 0;
+        align-items: center !important;
     }
+
+    .join-languages {
+        margin-top: 2rem;
+    }
+
+    .pollo-languages {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .github-link {
+        width: 7.5rem;
+        height: 3.5rem;
+        padding: 12px 20px 12px 20px;
+    }
+
+    .lets-talk {
+        width: 9.5rem;
+        height: 3.5rem;
+        padding: 12px 20px 12px 20px;
+        }
+
+        .join-languages-upper {
+            gap: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .join-languages-bottom {
+            gap: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .bottom-pollo-info {
+        
+            >p {
+                margin-top: 2rem;
+                text-align: center;
+                font-size: 1.3rem;
+            }
+        }
+
+        .pollo-img {
+            margin-top: 3rem;
+        }
+
+        .pollo-header {
+            text-align: center;
+        }
   }
+
+

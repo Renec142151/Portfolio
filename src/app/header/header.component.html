@@ -3,6 +3,7 @@
     ><img src="./assets/img/header-section/my-Logo.svg" alt=""
   /></a>
   <img
+    (click)="toggleMenu()"
     class="burger-menu-icon"
     src="/assets/img/header-section/Property 1=burger.svg"
     alt=""
@@ -22,3 +23,24 @@
     <a href="">EN</a>
   </div>
 </nav>
+
+<div class="menu-mobile" [class.active-menu-mobile]="isMenuOpen">
+  <div class="close-button d-flex justify-content-end">
+    <img
+      (click)="toggleMenu()"
+      src="/assets/img/header-section/Property 1=CLOSE FINAL.svg"
+      alt=""
+    />
+  </div>
+  <div class="links-mobile">
+    <a href="">Why Me</a>
+    <a href="">Skills</a>
+    <a href="">Projects</a>
+    <a href="">Contact</a>
+    <div class="language-menu-mobile fs-4">
+      <a href="">DE</a>
+      <div class="seperator-mobile"></div>
+      <a href="">EN</a>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,6 @@
 .my-skills {
     display: flex;
     align-items: center;
-    // height: 412px;
     flex-wrap: wrap;
     max-width: 1337px;
     gap: 100px;
@@ -21,4 +20,23 @@ h1 {
     color: $red;
     font-size: 3rem;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .my-skills {
+        justify-content: center;
+        margin-top: 4rem;
+        gap: 2.5rem;
+    
+        >img {
+            height: 6rem;
+            
+        }
+    }
 }
