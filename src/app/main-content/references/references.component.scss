@@ -3,6 +3,8 @@
 
 section {
     width: 90vw;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -12,8 +14,10 @@ h2 {
 
 
 .references {
-        margin-top: 32px;
+    margin-top: 32px;
     gap: 32px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .references-header {
@@ -29,7 +33,6 @@ section {
 
 .single-references {
     width: 525px;
-    // height: 350px;
     
     >span {
         font-size: 1.2rem;
@@ -44,8 +47,45 @@ section {
     gap: 1rem;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 800px) {
+    .header-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .references-header {
+        font-size: 1.3rem;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
     
+    .first-header {
+        font-size: 2rem;
+    }
 
+    .arrow {
+        display: none;
+       }
+
+    .single-references {
+        min-width: 40rem;
+        border: solid 1px rgba(2, 244, 191, 1) ;
+        padding: 1rem;
+    
+    >span {
+        font-size: 1.2rem;
+    }
+
+    >p {
+        font-size: 1.2rem;
+    }
+
+}
+
+.references {
+    flex-direction: row;
+    overflow-x: auto;
+
+}
     }
