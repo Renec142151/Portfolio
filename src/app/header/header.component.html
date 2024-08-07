@@ -12,15 +12,15 @@
     <a href="" class="my-logo"
       ><img src="./assets/img/header-section/my-Logo.svg" alt=""
     /></a>
-    <a href="">Why Me</a>
-    <a href="">Skills</a>
-    <a href="">Projects</a>
-    <a href="">Contact</a>
+    <a>{{ "Why me" | translate }}</a>
+    <a>{{ "Skills" | translate }}</a>
+    <a>{{ "Projects" | translate }}</a>
+    <a>{{ "Contact" | translate }}</a>
   </div>
   <div class="language-menu fs-4">
-    <a href="">DE</a>
+    <a (click)="translate.switchLanguage('de')">DE</a>
     <div class="seperator"></div>
-    <a href="">EN</a>
+    <a (click)="translate.switchLanguage('en')">EN</a>
   </div>
 </nav>
 
@@ -33,14 +33,14 @@
     />
   </div>
   <div class="links-mobile">
-    <a href="">Why Me</a>
-    <a href="">Skills</a>
-    <a href="">Projects</a>
-    <a href="">Contact</a>
+    <a>{{ "Why me" | translate }}</a>
+    <a>{{ "Skills" | translate }}</a>
+    <a>{{ "Projects" | translate }}</a>
+    <a>{{ "Contact" | translate }}</a>
     <div class="language-menu-mobile fs-4">
-      <a href="">DE</a>
+      <a (click)="translate.switchLanguage('de')">DE</a>
       <div class="seperator-mobile"></div>
-      <a href="">EN</a>
+      <a (click)="translate.switchLanguage('en')">EN</a>
     </div>
   </div>
 </div>

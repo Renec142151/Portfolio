@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^18.1.2",
     "@angular/platform-browser-dynamic": "^18.1.2",
     "@angular/router": "^18.1.2",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "@npmcli/package-json": "^5.2.0",
     "bootstrap": "^5.3.3",
     "ngx-bootstrap": "^18.0.2",

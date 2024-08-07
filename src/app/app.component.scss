@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%);
-    // background: rgba(18, 11, 53, 1);
-    // background-size: 100% 50%; // Größe des Verlaufs auf die Hälfte der Höhe des Containers
-    // background-repeat: repeat-y; // Vertikale Wiederholung des Verlaufs
+    background: linear-gradient(180deg, #13074E 25%, rgba(29, 10, 121, 0.95) 50%, #13074E 75%);
+    background-size: 100% 50%;
+    background-repeat: repeat-y;
+    
+
 
 }

@@ -95,8 +95,8 @@ a {
 
 
     >img {
-        height: 2rem;
-        width: 2rem;
+        height: 4rem;
+        width: 4rem;
         margin: 1rem;
         cursor: pointer;
     }
@@ -135,6 +135,25 @@ a {
 
     nav {
         justify-content: space-between;
+    }
+
+    .links-mobile {
+    
+        >a {
+            font-size: 2rem;
+            
+        }
+    }
+
+    .language-menu-mobile {
+        @include dFlex($g: 6px);
+        font-size: 2rem !important;
+        gap: 1rem;
+    
+        >div {
+            border: solid 1px $red;
+            height: 25px;
+        }
     }
 
 
