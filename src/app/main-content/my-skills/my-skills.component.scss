@@ -22,6 +22,20 @@ h1 {
     font-weight: 500;
 }
 
+.challenge-me-text {
+    height: 7.5rem;
+    width: 14rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.challenge-me:hover .challenge-me-text {
+    display: flex;
+}
+
 @media only screen and (max-width: 800px) {
 
 

@@ -1,7 +1,7 @@
 <section class="d-flex">
   <div class="contact-me">
     <div class="contact-me-header d-flex align-items-end">
-      <div class="header">Contact me</div>
+      <div class="header">{{ "Contact me" | translate }}</div>
       <div class="arrow-contact-me-div">
         <img
           class="arrow-contact-me"
@@ -12,8 +12,10 @@
     </div>
     <div class="contact-infos d-flex">
       <div class="contact-me-text">
-        Still not sure if I am the right person for your project? Contact me so
-        I can reassure you. Let us work together
+        {{
+          "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together"
+            | translate
+        }}
       </div>
       <div class="my-contact-infos">
         <div>
@@ -36,14 +38,54 @@
   </div>
 
   <div class="form-div">
-    <form action="">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <fieldset>
         <div class="input-section d-flex justify-content-between">
           <div class="name-email-section d-flex flex-column">
-            <input placeholder="Your Name" type="text" />
-            <input placeholder="Your E-mail" type="text" />
+            <input
+              [class.error]="!name.valid && (name.touched || checkSubmit)"
+              #name="ngModel"
+              [(ngModel)]="contactData.name"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="{{
+                !name.valid && (name.touched || checkSubmit)
+                  ? 'Please enter your Name!'
+                  : 'Your Name'
+              }}"
+              required
+            />
+
+            <input
+              [class.error]="!email.valid && (email.touched || checkSubmit)"
+              #email="ngModel"
+              [(ngModel)]="contactData.email"
+              placeholder="{{
+                !email.valid && (email.touched || checkSubmit)
+                  ? 'Please enter your Email!'
+                  : 'Your Email'
+              }}"
+              type="email"
+              name="email"
+              required
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            />
           </div>
-          <textarea name="message" id="" placeholder="Your Message"></textarea>
+
+          <textarea
+            [class.error]="!message.valid && (message.touched || checkSubmit)"
+            [(ngModel)]="contactData.message"
+            name="message"
+            id=""
+            placeholder="{{
+              !message.valid && (message.touched || checkSubmit)
+                ? 'Please enter your message!'
+                : 'Your message'
+            }}"
+            required
+            #message="ngModel"
+          ></textarea>
         </div>
         <div class="privacy-police-div">
           <img
@@ -51,12 +93,15 @@
             alt=""
           />
           <span
-            >I've read the <a href="">privacy policy</a> and agree to the
-            processing of my data as outlined.</span
+            >{{ "I've read the " | translate
+            }}<a href="">{{ "privacy policy" | translate }}</a
+            >{{
+              " and agree to the processing of my data as outlined." | translate
+            }}</span
           >
         </div>
         <div class="send-button-div d-flex justify-content-end">
-          <button>Send</button>
+          <button type="submit" value="Submit">Send</button>
         </div>
       </fieldset>
     </form>

@@ -14,11 +14,17 @@
       src="/assets/img/my-skills-section/Property 1=MaterialDesign.svg"
       alt=""
     />
-    <img
-      src="/assets/img/my-skills-section/Property 1=Challenge me.svg"
-      alt=""
-      onmouseover="src='/assets/img/my-skills-section/Property 1=Challenge me 02.svg';"
-      onmouseout="src='/assets/img/my-skills-section/Property 1=Challenge me.svg';"
-    />
+    <div class="challenge-me d-flex">
+      <img
+        src="/assets/img/my-skills-section/challenge me single symbol.svg"
+        alt=""
+      />
+      <div class="challenge-me-text">
+        {{
+          "I am always happy to learn new technonogies, just tell me what you need."
+            | translate
+        }}
+      </div>
+    </div>
   </div>
 </section>

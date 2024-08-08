@@ -7,11 +7,12 @@
     />
   </div>
   <div class="why-me-section-right-side d-flex flex-column align-items-end">
-    <h1>Why me</h1>
+    <h1>{{ "Why me" | translate }}</h1>
     <p>
-      I am motivated to continuously learn new technologies and develop myself.
-      My ability to solve complex problems and my passion for programming make
-      me a valuable member of your team.
+      {{
+        "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team."
+          | translate
+      }}
     </p>
     <div class="relocate-arrow-responsive-div">
       <img
@@ -26,7 +27,7 @@
       <div
         class="located d-flex justify-content-start align-items-center column-gap-5"
       >
-        <span class="i-am fs-1">I am</span>
+        <span class="i-am fs-1">{{ "I am" | translate }}</span>
         <div class="d-flex align-items-center column-gap-3">
           <div
             class="d-flex flex-column"
@@ -47,8 +48,8 @@
           </div>
 
           <div class="located-span d-flex flex-column">
-            <span>located</span>
-            <span>in Munich</span>
+            <span>{{ "located" | translate }}</span>
+            <span>{{ "in Munich" | translate }}</span>
           </div>
         </div>
       </div>
@@ -58,19 +59,6 @@
           src="/assets/img/why-me-section/Arrow-v1.png"
           alt=""
         />
-        <!-- <div class="relocate-inner d-flex align-items-center column-gap-3 me-3">
-          <img
-            class="relocate-bag"
-            src="/assets/img/why-me-section/relocate-v1.svg"
-            onmouseover="src='/assets/img/why-me-section/relocate-v2.svg';"
-            onmouseout="src='/assets/img/why-me-section/relocate-v1.svg';"
-            alt=""
-          />
-          <div class="relocate-span d-flex flex-column">
-            <span>open to</span>
-            <span>relocate</span>
-          </div>
-        </div> -->
       </div>
       <div class="remote d-flex justify-content-between align-items-center">
         <div class="remote-inner d-flex column-gap-3 ms-4 align-items-center">
@@ -85,8 +73,8 @@
           </div>
 
           <div class="remote-span d-flex flex-column">
-            <span>open to</span>
-            <span>work remote</span>
+            <span>{{ "open to" | translate }}</span>
+            <span>{{ "work remote" | translate }}</span>
           </div>
 
           <img
@@ -95,12 +83,6 @@
             alt=""
           />
         </div>
-
-        <!-- <img
-          class="arrow-v3"
-          src="/assets/img/why-me-section/Arrow-v3.png"
-          alt=""
-        /> -->
       </div>
     </div>
     <div class="remote-arrow-responsive-div">
@@ -110,6 +92,8 @@
         alt=""
       />
     </div>
-    <a class="lets-talk link-red-hover" href="">Let's talk</a>
+    <a class="lets-talk link-red-hover" href="">{{
+      "Let's talk" | translate
+    }}</a>
   </div>
 </section>

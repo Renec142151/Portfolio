@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
 isMenuOpen = false;
 translate = inject(TranslationService)
 toggleMenu (){

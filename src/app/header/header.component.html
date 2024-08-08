@@ -18,9 +18,19 @@
     <a>{{ "Contact" | translate }}</a>
   </div>
   <div class="language-menu fs-4">
-    <a (click)="translate.switchLanguage('de')">DE</a>
-    <div class="seperator"></div>
-    <a (click)="translate.switchLanguage('en')">EN</a>
+    <a
+      class="de-button"
+      (click)="translate.switchLanguage('de')"
+      [class.active-language]="translate.currentLanguage === 'de'"
+      >DE</a
+    >
+    <div class="seperator-mobile"></div>
+    <a
+      class="en-button"
+      (click)="translate.switchLanguage('en')"
+      [class.active-language]="translate.currentLanguage === 'en'"
+      >EN</a
+    >
   </div>
 </nav>
 
@@ -38,9 +48,19 @@
     <a>{{ "Projects" | translate }}</a>
     <a>{{ "Contact" | translate }}</a>
     <div class="language-menu-mobile fs-4">
-      <a (click)="translate.switchLanguage('de')">DE</a>
+      <a
+        class="de-button"
+        (click)="translate.switchLanguage('de')"
+        [class.active-language]="translate.currentLanguage === 'de'"
+        >DE</a
+      >
       <div class="seperator-mobile"></div>
-      <a (click)="translate.switchLanguage('en')">EN</a>
+      <a
+        class="en-button"
+        (click)="translate.switchLanguage('en')"
+        [class.active-language]="translate.currentLanguage === 'en'"
+        >EN</a
+      >
     </div>
   </div>
 </div>
