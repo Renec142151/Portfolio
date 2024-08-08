@@ -49,11 +49,7 @@
               id="name"
               type="text"
               name="name"
-              placeholder="{{
-                !name.valid && (name.touched || checkSubmit)
-                  ? 'Please enter your Name!'
-                  : 'Your Name'
-              }}"
+              [placeholder]="getNamePlaceholder(name.valid, name.touched)"
               required
             />
 
@@ -61,11 +57,7 @@
               [class.error]="!email.valid && (email.touched || checkSubmit)"
               #email="ngModel"
               [(ngModel)]="contactData.email"
-              placeholder="{{
-                !email.valid && (email.touched || checkSubmit)
-                  ? 'Please enter your Email!'
-                  : 'Your Email'
-              }}"
+              [placeholder]="getEmailPlaceholder(email.valid, email.touched)"
               type="email"
               name="email"
               required
@@ -78,30 +70,49 @@
             [(ngModel)]="contactData.message"
             name="message"
             id=""
-            placeholder="{{
-              !message.valid && (message.touched || checkSubmit)
-                ? 'Please enter your message!'
-                : 'Your message'
-            }}"
+            [placeholder]="
+              getMessagePlaceholder(message.valid, message.touched)
+            "
             required
             #message="ngModel"
           ></textarea>
         </div>
         <div class="privacy-police-div">
           <img
-            src="/assets/img/contact-me-section/check_box_outline_blank.svg"
+            (click)="togglePrivacyPolice()"
+            class="checkbox"
+            [src]="
+              privacyAgreed
+                ? '/assets/img/contact-me-section/Property 1=checked box.svg'
+                : '/assets/img/contact-me-section/check_box_outline_blank.svg'
+            "
             alt=""
           />
-          <span
-            >{{ "I've read the " | translate
-            }}<a href="">{{ "privacy policy" | translate }}</a
-            >{{
-              " and agree to the processing of my data as outlined." | translate
-            }}</span
-          >
+          <span class="d-flex align-items-center">
+            {{ "I've read the" | translate }}&nbsp;<a
+              class="privacy-link"
+              href=""
+              >{{ "privacy policy" | translate }}</a
+            >&nbsp;{{
+              "and agree to the processing of my data as outlined." | translate
+            }}
+          </span>
         </div>
+        @if (checkPrivacy && !privacyAgreed) {
+        <span class="privacy-error">{{
+          "Please accept the privacy policy." | translate
+        }}</span>
+        }
         <div class="send-button-div d-flex justify-content-end">
-          <button type="submit" value="Submit">Send</button>
+          <button
+            [class.legal-submit]="
+              privacyAgreed && message.valid && email.valid && name.valid
+            "
+            type="submit"
+            value="Submit"
+          >
+            Send
+          </button>
         </div>
       </fieldset>
     </form>

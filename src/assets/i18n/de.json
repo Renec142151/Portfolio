@@ -21,8 +21,16 @@
     "Contact me": "Kontaktiere mich",
     "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together": "Sie sind sich immer noch nicht sicher, ob ich die richtige Person für Ihr Projekt bin? Kontaktieren Sie mich, damit ich Sie beruhigen kann. Lassen Sie uns zusammenarbeiten",
     "privacy policy": "Datenschutzbestimmungen",
-    "I've read the ": "Ich habe die ",
-    " and agree to the processing of my data as outlined.": " gelesen und stimme der oben beschriebenen Verarbeitung meiner Daten zu."
+    "I've read the": "Ich habe die",
+    "and agree to the processing of my data as outlined.": "gelesen und stimme der oben beschriebenen Verarbeitung meiner Daten zu.",
+    "Please enter your message": "Bitte füge eine Nachricht ein",
+    "Please enter your Name!": "Bitte füge deinen Namen ein!",
+    "Your Name": "Dein Name",
+    "Please enter your Email!": "Bitte füge deine E-Mail-Adresse ein!",
+    "Your Email": "Deine E-Mail-Adresse",
+    "Your message": "Deine Nachricht",
+    "Please accept the privacy policy.": "Bitte akzeptiere den Datenschutz!"
+
 
     
   }
