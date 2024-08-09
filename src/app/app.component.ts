@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
 import { MainContentComponent } from './main-content/main-content.component';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 })
 export class AppComponent {
   title = 'myPortfolio';
+  ngOnInit() {
+    AOS.init();
+ }
 }

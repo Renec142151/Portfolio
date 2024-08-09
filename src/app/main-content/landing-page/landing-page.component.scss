@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 25%;
+    gap: 15%;
 }
 
 .landing-page-navigate {
@@ -51,6 +51,8 @@
     text-decoration: none;
     color: $red;
     margin-left: -50px;
+    position: relative;
+    bottom: 3rem;
     
     
 }
