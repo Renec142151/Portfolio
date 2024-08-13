@@ -43,10 +43,10 @@
     />
   </div>
   <div class="links-mobile">
-    <a>{{ "Why me" | translate }}</a>
-    <a>{{ "Skills" | translate }}</a>
-    <a>{{ "Projects" | translate }}</a>
-    <a>{{ "Contact" | translate }}</a>
+    <a (click)="toggleMenu()" href="#why-me"> {{ "Why me" | translate }}</a>
+    <a (click)="toggleMenu()" href="#my-skills">{{ "Skills" | translate }}</a>
+    <a (click)="toggleMenu()" href="#projects">{{ "Projects" | translate }}</a>
+    <a (click)="toggleMenu()" href="#contact">{{ "Contact" | translate }}</a>
     <div class="language-menu-mobile fs-4">
       <a
         class="de-button"
