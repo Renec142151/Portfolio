@@ -19,6 +19,25 @@
     gap: $g;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(11, 4, 45, 1);;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 38, 31);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $red;
+}
+
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -68,6 +87,9 @@ a:hover {
   color: rgba(11, 4, 45, 1);
   font-weight: bold;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
   .link-red-hover:hover {

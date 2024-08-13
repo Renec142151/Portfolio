@@ -91,6 +91,9 @@ h1 {
     font-weight: bold;
     font-size: 1rem;
     border: 1px solid #02F4BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .links-to-projects {

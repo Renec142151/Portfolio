@@ -20,11 +20,18 @@
       <div class="my-contact-infos">
         <div>
           <img src="./assets/img/contact-me-section/e-mail-sign.svg" alt="" />
-          <span class="e-mail">E-mail: mustermail&#64;gmail.com</span>
+          <span class="e-mail"
+            >E-mail: <br />
+            info&#64;rene-lochschmidt.de</span
+          >
         </div>
         <div>
-          <img src="./assets/img/contact-me-section/tel-icon.svg" alt="" />
-          <span class="telefon-number">Tel: 0157 123 456 68</span>
+          <img
+            class="tel-icon"
+            src="./assets/img/contact-me-section/tel-icon.svg"
+            alt=""
+          />
+          <span class="telefon-number">Tel: 0157 478 4556 68</span>
         </div>
       </div>
       <div class="arrow-up-red">
@@ -90,10 +97,11 @@
             "
             alt=""
           />
-          <span class="d-flex align-items-center">
+          <span class="privacy-police-text d-flex align-items-center">
             {{ "I've read the" | translate }}&nbsp;<a
+              target="_blank"
               class="privacy-link"
-              href=""
+              href="/imprint"
               >{{ "privacy policy" | translate }}</a
             >&nbsp;{{
               "and agree to the processing of my data as outlined." | translate
@@ -104,6 +112,13 @@
         <span class="privacy-error">{{
           "Please accept the privacy policy." | translate
         }}</span>
+        } @if (showSuccessMessage) {
+        <div class="success-message-div">
+          <div class="success-message">
+            {{ "Your message has been successfully sent!" | translate }}
+          </div>
+        </div>
+
         }
         <div class="send-button-div d-flex justify-content-end">
           <button
@@ -113,7 +128,7 @@
             type="submit"
             value="Submit"
           >
-            Send
+            {{ "Send" | translate }}
           </button>
         </div>
       </fieldset>
@@ -130,11 +145,11 @@
     <div class="my-contact-infos-responsive">
       <div>
         <img src="./assets/img/contact-me-section/e-mail-sign.svg" alt="" />
-        <span class="e-mail">E-mail: mustermail&#64;gmail.com</span>
+        <span class="e-mail">E-mail: info&#64;rene-lochschmidt.de</span>
       </div>
       <div>
         <img src="./assets/img/contact-me-section/tel-icon.svg" alt="" />
-        <span class="telefon-number">Tel: 0157 123 456 68</span>
+        <span class="telefon-number">Tel: 0157 478 4556 68</span>
       </div>
     </div>
   </div>

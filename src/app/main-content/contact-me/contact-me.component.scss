@@ -19,6 +19,8 @@
 }
 
 
+
+
 section {
   max-width: 1184px;
   flex-direction: column;
@@ -43,6 +45,28 @@ section {
     font-size: 1.2rem;
 }
 
+.success-message-div {
+  display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.success-message {
+  height: 6rem;
+  width: 16rem;
+  border: solid 3px #02F4BF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $red;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #120B35;
+
+
+}
+
 
 
 
@@ -53,6 +77,10 @@ section {
 
 .telefon-number {
     font-size: 1.2rem;
+}
+
+.tel-icon {
+  width: 25px;
 }
 
 .contact-me-header {
@@ -129,7 +157,7 @@ textarea {
 
     >div {
       display: flex;
-      gap: 0.5rem;
+      gap: 1.5rem;
     }
 }
 
@@ -187,6 +215,17 @@ button {
 
 
 @media only screen and (max-width: 800px) {
+
+  .success-message-div {
+      justify-content: center;
+      margin-bottom: 3rem;
+ 
+  }
+
+  .privacy-police-text {
+    flex-direction: column;
+    text-align: center;
+  }
  
 .arrow-contact-me-div {
   display: none;
@@ -257,6 +296,8 @@ textarea {
 
 .privacy-police-div {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
 
   >span {
     font-size: 1rem;
