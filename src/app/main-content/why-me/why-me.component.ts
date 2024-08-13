@@ -12,6 +12,7 @@ import { TranslationService } from '../../translation.service';
 })
 export class WhyMeComponent {
   showBase = false;
+  showSignal = false;
   translate = inject(TranslationService);
 
 }

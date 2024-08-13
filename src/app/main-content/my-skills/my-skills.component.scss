@@ -3,6 +3,10 @@
 
 section {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
 }
 
 .my-skills {
@@ -40,6 +44,11 @@ h1 {
     display: flex;
 }
 
+.challenge-me-mobile {
+    display: none;
+}
+
+
 @media only screen and (max-width: 800px) {
 
 
@@ -57,4 +66,26 @@ h1 {
             
         }
     }
+
+
+    .challenge-me {
+        display: none !important;
+    }
+
+    .challenge-me-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+
+        >img { 
+            height: 4rem;
+        }
+    }
+
+    .challenge-me-text-mobile {
+        text-align: center;
+    }
+
+
 }

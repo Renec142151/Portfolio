@@ -26,6 +26,7 @@
 
 .profil-image {
     width: 100%;
+    border-radius: 50%
    
 }
 
@@ -57,14 +58,43 @@ span {
 
 .remote-icon {
     height: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.remote-laptop {
+    position: relative;
+    bottom: 44px;
 }
 
 .arrow-v2 {
     height: 35px;
+    margin-left: 2rem;
 }
 
 .arrow-v3 {
     height: 56px;
+}
+
+.wifi-variant1 {
+    position: relative;
+    left: -19px;
+    top: -28px;
+
+}
+
+.wifi-variant2 {
+    height: 29px;
+    position: relative;
+    top: 2px;
+    left: -23px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.remote-icon:hover .wifi-variant2 {
+    opacity: 1;
 }
 
 
@@ -96,6 +126,9 @@ span {
     opacity: 1;
   }
 
+
+  
+ 
   .relocate-arrow-responsive {
     display: none;
   }
