@@ -64,6 +64,12 @@
               required
               pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             />
+            <div
+              *ngIf="email.errors?.['pattern'] && (email.touched || checkSubmit)"
+              class="error-message-email-pattern"
+            >
+              {{ "Please enter a valid email address." | translate }}
+            </div>
           </div>
 
           <textarea

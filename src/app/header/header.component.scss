@@ -118,16 +118,21 @@ a {
     }
 }
 
+.navigation-menu-div {
+    display: flex;
+    width: 90vw;
+    max-width: 1337px;
+    justify-content: space-between;
+}
+
+
 
 @media only screen and (max-width: 800px) {
-    .navigation-menu {
+
+    .navigation-menu-div {
         display: none;
     }
 
-    .language-menu {
-        display: none;
-    
-    }
 
     .burger-menu-icon {
         display: flex;

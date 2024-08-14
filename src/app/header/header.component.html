@@ -8,29 +8,31 @@
     src="./assets/img/header-section/Property 1=burger.svg"
     alt=""
   />
-  <div class="navigation-menu fs-4">
-    <a href="" class="my-logo"
-      ><img src="./assets/img/header-section/my-Logo.svg" alt=""
-    /></a>
-    <a href="#why-me"> {{ "Why me" | translate }}</a>
-    <a href="#my-skills">{{ "Skills" | translate }}</a>
-    <a href="#projects">{{ "Projects" | translate }}</a>
-    <a href="#contact">{{ "Contact" | translate }}</a>
-  </div>
-  <div class="language-menu fs-4">
-    <a
-      class="de-button"
-      (click)="translate.switchLanguage('de')"
-      [class.active-language]="translate.currentLanguage === 'de'"
-      >DE</a
-    >
-    <div class="seperator-mobile"></div>
-    <a
-      class="en-button"
-      (click)="translate.switchLanguage('en')"
-      [class.active-language]="translate.currentLanguage === 'en'"
-      >EN</a
-    >
+  <div class="navigation-menu-div">
+    <div class="navigation-menu fs-4">
+      <a href="" class="my-logo"
+        ><img src="./assets/img/header-section/my-Logo.svg" alt=""
+      /></a>
+      <a href="#why-me"> {{ "Why me" | translate }}</a>
+      <a href="#my-skills">{{ "Skills" | translate }}</a>
+      <a href="#projects">{{ "Projects" | translate }}</a>
+      <a href="#contact">{{ "Contact" | translate }}</a>
+    </div>
+    <div class="language-menu fs-4">
+      <a
+        class="de-button"
+        (click)="translate.switchLanguage('de')"
+        [class.active-language]="translate.currentLanguage === 'de'"
+        >DE</a
+      >
+      <div class="seperator-mobile"></div>
+      <a
+        class="en-button"
+        (click)="translate.switchLanguage('en')"
+        [class.active-language]="translate.currentLanguage === 'en'"
+        >EN</a
+      >
+    </div>
   </div>
 </nav>
 
