@@ -80,15 +80,20 @@
         </div>
         <div class="privacy-police-div">
           <img
+            class="checkbox-checked"
             (click)="togglePrivacyPolice()"
-            class="checkbox"
-            [src]="
-              privacyAgreed
-                ? './assets/img/contact-me-section/Property 1=checked box.svg'
-                : './assets/img/contact-me-section/check_box_outline_blank.svg'
-            "
-            alt=""
+            *ngIf="privacyAgreed"
+            src="./assets/img/contact-me-section/Property 1=checked box.svg"
+            alt="Checked Box"
           />
+          <img
+            class="checkbox"
+            (click)="togglePrivacyPolice()"
+            *ngIf="!privacyAgreed"
+            src="./assets/img/contact-me-section/check_box_outline_blank.svg"
+            alt="Unchecked Box"
+          />
+
           <span class="privacy-police-text d-flex align-items-center">
             {{ "I've read the" | translate }}&nbsp;<a
               target="_blank"
@@ -127,11 +132,13 @@
     </form>
     <div class="arrow-up-red-responsive-div">
       <div class="arrow-up-red-responsive">
-        <img
-          src="./assets/img/contact-me-section/arrow-up.svg"
-          onmouseover="this.src='./assets/img/contact-me-section/arrow-up-hover.svg';"
-          onmouseout="this.src='./assets/img/contact-me-section/arrow-up.svg';"
-        />
+        <a href="#landing-page">
+          <img
+            src="./assets/img/contact-me-section/arrow-up.svg"
+            onmouseover="this.src='./assets/img/contact-me-section/arrow-up-hover.svg';"
+            onmouseout="this.src='./assets/img/contact-me-section/arrow-up.svg';"
+          />
+        </a>
       </div>
     </div>
     <div class="my-contact-infos-responsive">
