@@ -51,7 +51,6 @@ export class ContactMeComponent {
       this.checkSubmit = false;
       this.checkPrivacy = false;
       this.privacyAgreed = false;
-      console.log(this.contactData);
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
