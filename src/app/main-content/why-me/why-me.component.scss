@@ -13,6 +13,7 @@
 .why-me-section-right-side {
 
     margin-left: 1rem;
+    width: 50%;
 }
 
 
@@ -20,13 +21,12 @@
 
 .i-am-section {
     flex: 1;
-    width: 600px;
+    width: 100%;
 }
 
 
 .profil-image {
     width: 100%;
-    border-radius: 50%
    
 }
 
@@ -37,7 +37,7 @@ h1 {
 
 p {
     font-size: 1.2rem;
-    width: 80%;
+    margin-bottom: 2rem;
 }
 
 span {
@@ -142,6 +142,17 @@ display: none;  }
     .profil-image {
         display: none;
        
+    }
+
+    .why-me-section-right-side {
+
+        margin-left: 1rem;
+        width: unset;
+    }
+
+    .i-am-section {
+        flex: 1;
+        width: 600px;
     }
 
 
